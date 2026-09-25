@@ -1,0 +1,52 @@
+{
+  "name": "@twintylabs/vite-plugin-runner",
+  "version": "1.2.0",
+  "description": "Run commands when Vite starts or a file changes",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vite": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "runner",
+    "laravel",
+    "php"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twintylabs/vite-plugin-runner.git"
+  },
+  "homepage": "https://github.com/twintylabs/vite-plugin-runner#readme",
+  "bugs": {
+    "url": "https://github.com/twintylabs/vite-plugin-runner/issues"
+  }
+}
